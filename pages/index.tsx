@@ -4,7 +4,7 @@ import Footer from '../components/Footer';
 
 export default function Home() {
   return (
-    <Container>
+    <Container className="py-4">
       <Header />
 
       <Footer />
