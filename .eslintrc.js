@@ -8,16 +8,17 @@ module.exports = {
     'airbnb',
     'next/core-web-vitals',
   ],
+  parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
-      modules: true,
     },
-    ecmaVersion: 6,
+    ecmaVersion: 'latest',
     sourceType: 'module',
   },
   plugins: [
     'react',
+    '@typescript-eslint',
   ],
   rules: {
   },
