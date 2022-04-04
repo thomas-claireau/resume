@@ -15,7 +15,6 @@
     },
     "commitizenEmoji": {
       "skipQuestions": [
-        "scope",
         "body",
         "breakingBody",
         "issues"
