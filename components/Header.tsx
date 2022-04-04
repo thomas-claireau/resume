@@ -1,8 +1,7 @@
 import { useRouter } from 'next/router';
 import Image from 'next/image';
 
-import resolveConfig from 'tailwindcss/resolveConfig';
-import tailwindConfig from '../tailwind.config';
+import Link from 'next/link';
 
 import Button from './Button';
 
@@ -14,12 +13,13 @@ export default function Header() {
   const { locale } = router;
   const t = locale === 'en' ? en : fr;
 
-  const { theme } = resolveConfig(tailwindConfig);
-
   return (
-    <header className="flex items-center justify-between">
-      <div className="left">
-        <Button color="bg-[#c3ace9]" shadow="shadow-[0_2px_0_0_#a439ff]">{t.contact}</Button>
+    <header className="flex items-center justify-between pb-8 border-b-2 border-gray-100">
+      <div className="left flex items-center gap-6">
+        <Button color="bg-[#c3ace9]" shadow="shadow-[0_2px_0_0_#a439ff]" href="mailto:pro.thomas.claireau@gmail.com" target="blank">{t.contact}</Button>
+        <Link href="/blog">
+          <a className="text-gray-300" target="blank">Blog</a>
+        </Link>
       </div>
       <div className="flex items-center relative gap-4">
         <div className="flex flex-col items-end">

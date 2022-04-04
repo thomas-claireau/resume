@@ -9,8 +9,15 @@ module.exports = {
       sans: ['Nunito', 'sans-serif'],
     },
     colors: {
-      gray: '#545454',
+      gray: {
+        100: '#EFEFEF',
+        300: '#B2B2B2',
+        600: '#545454',
+      },
     },
+    borderColor: (theme) => ({
+      DEFAULT: theme('colors.gray.100', 'currentColor'),
+    }),
   },
   plugins: [],
 };
