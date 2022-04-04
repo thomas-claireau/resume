@@ -1,5 +1,9 @@
 import { useRouter } from 'next/router';
 import Image from 'next/image';
+
+import resolveConfig from 'tailwindcss/resolveConfig';
+import tailwindConfig from '../tailwind.config';
+
 import Button from './Button';
 
 import en from '../locales/en';
@@ -10,10 +14,12 @@ export default function Header() {
   const { locale } = router;
   const t = locale === 'en' ? en : fr;
 
+  const { theme } = resolveConfig(tailwindConfig);
+
   return (
-    <header className="flex justify-between">
+    <header className="flex items-center justify-between">
       <div className="left">
-        <Button>{t.contact}</Button>
+        <Button color="bg-[#c3ace9]" shadow="shadow-[0_2px_0_0_#a439ff]">{t.contact}</Button>
       </div>
       <div className="flex items-center relative gap-4">
         <div className="flex flex-col items-end">
