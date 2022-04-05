@@ -16,7 +16,7 @@ export default function Home() {
       <Header />
 
       <div className="flex gap-5 mt-8">
-        <main className="w-full">
+        <main className="w-full min-w-[65%]">
           <h1 className="text-2xl font-normal">{i18n?.h1}</h1>
           <p className="text-lg mt-4">{i18n?.description}</p>
           <div className="buttons mt-6 flex gap-2">
@@ -29,9 +29,9 @@ export default function Home() {
           <Box data={i18n?.formation} />
         </main>
         <aside className="w-full">
-          <Box data={i18n?.skills} />
-          <Box data={i18n?.tools} />
-          <Box data={i18n?.interests} />
+          <Box data={i18n?.skills} ul />
+          <Box data={i18n?.tools} ul />
+          <Box data={i18n?.interests} ul />
         </aside>
       </div>
 

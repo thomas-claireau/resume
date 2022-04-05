@@ -3,9 +3,9 @@ type Data = {
 	label: string;
 	items: Array<{
 		title: string;
-		description: string;
-		organization: string;
-		date: string;
+		description?: string;
+		organization?: string;
+		date?: string;
 	}>;
 }
 
@@ -22,18 +22,20 @@ export default function Box({ data, ul = false }: Props) {
       <h3 className="text-xl font-semibold">
         {data.label}
       </h3>
-      <div className="flex flex-col gap-5 mt-5">
+      <div className={`flex flex-col ${!ul ? 'gap-5' : ''} mt-5`}>
         {data.items.map(({
           title, description, organization, date,
-        }, index) => (
+        }, index) => (!ul ? (
           <div key={index}>
             <h4 className="font-semibold">{title}</h4>
-            <p className="font-light italic text-sm">{`${organization} / ${date}`}</p>
-            <div>
-              {description}
-            </div>
+            {organization && date && <p className="font-light italic text-sm">{`${organization} / ${date}`}</p>}
+            {description && (
+              <div>
+                {description}
+              </div>
+            )}
           </div>
-        ))}
+        ) : (<li>{title}</li>)))}
       </div>
     </article>
   );
