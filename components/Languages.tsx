@@ -1,9 +1,13 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-export default function Languages() {
+type Props = {
+	className?: string;
+}
+
+export default function Languages({ className = '' }: Props) {
   return (
-    <div className="flex gap-3 border-t mt-6 pt-4 cursor-pointer">
+    <div className={`${className} flex gap-3 border-t mt-6 pt-4 cursor-pointer`}>
       <Link href="/" locale="fr">
         <a><Image src="/img/fr.png" width={28} height={20} /></a>
       </Link>

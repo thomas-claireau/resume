@@ -18,7 +18,7 @@ export default function Box({ data, ul = false }: Props) {
   if (!data) return <div>Loading</div>;
 
   return (
-    <article className="mt-6 border border-gray-100 rounded-xl p-4">
+    <article className="mt-5 border border-gray-100 rounded-xl p-4 md:mt-6">
       <h3 className="text-xl font-semibold">
         {data.label}
       </h3>

@@ -6,7 +6,7 @@ export default function Footer() {
   const date = new Date();
 
   return (
-    <footer className="flex justify-between border-t mt-8 text-sm text-gray-300 pt-4">
+    <footer className="flex flex-col items-center gap-3 justify-between border-t mt-8 text-sm text-gray-300 pt-4 md:flex-row md:gap-0 text-center">
       <div className="left">
         c.
         {' '}
