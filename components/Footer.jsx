@@ -18,7 +18,7 @@ export default function Footer() {
         )
       </div>
       <div className="right cursor-pointer">
-        {i18n.print}
+        {i18n?.print}
       </div>
     </footer>
   );

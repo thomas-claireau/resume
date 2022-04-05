@@ -35,7 +35,7 @@ export default function Box({ data, ul = false }: Props) {
               </div>
             )}
           </div>
-        ) : (<li>{title}</li>)))}
+        ) : (<li key={index}>{title}</li>)))}
       </div>
     </article>
   );
