@@ -39,5 +39,6 @@ module.exports = {
     'jsx-a11y/alt-text': 'off',
     'react/button-has-type': 'off',
     'react/require-default-props': 'off',
+    'import/prefer-default-export': 'off',
   },
 };
