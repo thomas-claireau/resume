@@ -10,7 +10,7 @@ export default function Header() {
   const { i18n } = useAppContext();
 
   return (
-    <header className="flex items-center justify-between pb-8 border-b-2 border-gray-100">
+    <header className="flex items-center justify-between pb-8 border-b border-gray-100">
       <div className="left flex items-center gap-6">
         <Button color="bg-[#c3ace9]" shadow="shadow-[0_2px_0_0_#a439ff]" href="mailto:pro.thomas.claireau@gmail.com" target="blank">{i18n?.contact}</Button>
         <Link href="/blog">

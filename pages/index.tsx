@@ -1,6 +1,7 @@
 import Header from '../components/Header';
 import Container from '../components/Container';
 import Footer from '../components/Footer';
+import Languages from '../components/Languages';
 
 import { useAppContext } from '../AppContext';
 import Button from '../components/Button';
@@ -32,6 +33,8 @@ export default function Home() {
           <Box data={i18n?.skills} ul />
           <Box data={i18n?.tools} ul />
           <Box data={i18n?.interests} ul />
+
+          <Languages />
         </aside>
       </div>
 
