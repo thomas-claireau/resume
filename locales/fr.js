@@ -101,4 +101,5 @@ export default {
       },
     ],
   },
+  print: 'CV en ligne - Imprimer que si nécessaire 🌱',
 };

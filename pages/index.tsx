@@ -38,7 +38,7 @@ export default function Home() {
         </aside>
       </div>
 
-      {/* <Footer /> */}
+      <Footer />
     </Container>
   );
 }

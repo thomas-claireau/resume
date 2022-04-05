@@ -101,4 +101,5 @@ export default {
       },
     ],
   },
+  print: 'Digital resume - print only if necessary 🌱',
 };
