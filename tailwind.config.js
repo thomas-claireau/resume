@@ -5,9 +5,6 @@ module.exports = {
   ],
   theme: {
     extend: {},
-    fontFamily: {
-      sans: ['Nunito', 'sans-serif'],
-    },
     colors: {
       gray: {
         100: '#EFEFEF',
