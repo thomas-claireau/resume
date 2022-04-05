@@ -10,8 +10,6 @@ import Box from '../components/Box';
 export default function Home() {
   const { i18n } = useAppContext();
 
-  console.log(i18n);
-
   return (
     <Container className="py-4">
       <Header />
