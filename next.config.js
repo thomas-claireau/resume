@@ -1,13 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-	i18n: {
+  i18n: {
     locales: ['en', 'fr'],
     defaultLocale: 'fr',
   },
-	eslint: {
+  eslint: {
     dirs: ['pages', 'components'],
   },
-}
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
