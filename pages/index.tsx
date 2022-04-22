@@ -24,9 +24,8 @@ export default function Home() {
           </div>
           <p className="text-lg mt-4">{i18n?.description}</p>
           <div className="buttons mt-6 flex flex-wrap gap-2">
-            <Button href="/portfolio" target="_blank" color="bg-[#88e7e2]" shadow="shadow-[0_2px_0_0_#5c9bfe]">{i18n?.buttons?.portfolio}</Button>
-            <Button href="/blog" target="_blank" color="bg-[#ecbc87]" shadow="shadow-[0_2px_0_0_#df7700]">{i18n?.buttons?.blog}</Button>
-            <Button href="/portfolio" target="_blank" color="bg-[#97e660]" shadow="shadow-[0_2px_0_0_#00ad4e]">{i18n?.buttons?.linktree}</Button>
+            <Button href="#" color="bg-[#88e7e2]" shadow="shadow-[0_2px_0_0_#5c9bfe]">{i18n?.buttons?.portfolio}</Button>
+            <Button href="https://www.linkedin.com/in/thomas-claireau/recent-activity/shares/" target="_blank" color="bg-[#ecbc87]" shadow="shadow-[0_2px_0_0_#df7700]">{i18n?.buttons?.blog}</Button>
           </div>
 
           <Box data={i18n?.projects} />

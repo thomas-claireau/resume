@@ -23,7 +23,7 @@ export default function Header() {
           )}
 
         </Button>
-        <Link href="/blog">
+        <Link href="https://www.linkedin.com/in/thomas-claireau/recent-activity/shares/">
           <a className="text-gray-300" target="blank">Blog</a>
         </Link>
       </div>
