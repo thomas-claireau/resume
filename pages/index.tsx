@@ -41,12 +41,12 @@ export default function Home() {
             <Button href="#" color="bg-[#88e7e2] print:text-[#88e7e2]" shadow="shadow-[0_2px_0_0_#5c9bfe]">
               <>
                 <span className="print:hidden">{i18n?.buttons?.portfolio?.web}</span>
-                <a href={i18n?.buttons?.portfolio?.print} className="hidden print:flex items-center gap-2">
+                <span className="hidden print:flex items-center gap-2">
                   <span className="mt-1">
                     💻
                   </span>
                   {`${hostname}${i18n?.buttons?.portfolio?.print}`}
-                </a>
+                </span>
               </>
             </Button>
             <Button href={i18n?.buttons?.blog?.print} target="_blank" color="bg-[#ecbc87] print:text-[#ecbc87]" shadow="shadow-[0_2px_0_0_#df7700]">

@@ -17,7 +17,7 @@ export default function Footer({ handlePrint }) {
         <a href="https://linktr.ee/madewithjello" target="_blank" rel="noreferrer">Jason Mayfield Jr.</a>
         )
       </div>
-      <div className="right cursor-pointer" onClick={handlePrint} aria-hidden>
+      <div className="right cursor-pointer hover:underline" onClick={handlePrint} aria-hidden>
         {i18n?.print}
       </div>
     </footer>
