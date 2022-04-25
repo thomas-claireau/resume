@@ -1,12 +1,21 @@
 /* eslint-disable import/no-anonymous-default-export */
 export default {
-  contact: 'Get In Touch',
-  job: 'Fullstack Web Developer',
+  contact: {
+    web: 'Get In Touch',
+    print: 'pro.thomas.claireau@gmail.com',
+  },
+  job: 'Fullstack Web Developer PHP Symfony React.js',
   h1: 'Hello, I\'m Thomas 👋',
-  description: 'I\'m 26 and I\'m a fullstack web developer with 4 years of experience in JavaScript and PHP.',
+  description: 'I\'m 27 and I\'m a fullstack web developer with 4 years of experience in JavaScript and PHP.',
   buttons: {
-    portfolio: 'See my portfolio',
-    blog: 'Blog',
+    portfolio: {
+      web: 'See my portfolio',
+      print: '/portfolio',
+    },
+    blog: {
+      web: 'Blog',
+      print: '/posts',
+    },
     linktree: 'Linktree',
   },
   projects: {

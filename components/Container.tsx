@@ -1,12 +1,16 @@
+import { forwardRef } from 'react';
+
 type Props = {
   children: JSX.Element | JSX.Element[];
 	className: string;
 }
 
-export default function Container({ children, className }: Props) {
+function Container({ children, className }: Props, ref) {
   return (
-    <div className={`${className} max-w-5xl mx-auto px-4`}>
+    <div className={`min-h-screen ${className} max-w-5xl mx-auto px-4 flex flex-col justify-between`} ref={ref}>
       {children}
     </div>
   );
 }
+
+export default forwardRef(Container);
