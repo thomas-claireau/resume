@@ -1,12 +1,21 @@
 /* eslint-disable import/no-anonymous-default-export */
 export default {
-  contact: 'Contact',
-  job: 'Développeur web fullstack',
+  contact: {
+    web: 'Contact',
+    print: 'pro.thomas.claireau@gmail.com',
+  },
+  job: 'Développeur web fullstack PHP Symfony / React.js',
   h1: 'Hello, je suis Thomas 👋',
-  description: 'Je m’appelle Thomas Claireau, j\'ai 26 ans et je suis développeur web avec 4 ans d’expérience en JavaScript et en PHP.',
+  description: 'Je m’appelle Thomas Claireau, j\'ai 27 ans et je suis développeur web avec 4 ans d’expérience en JavaScript et en PHP.',
   buttons: {
-    portfolio: 'Voir mon portfolio',
-    blog: 'Mes articles',
+    portfolio: {
+      web: 'Voir mon portfolio',
+      print: '/portfolio',
+    },
+    blog: {
+      web: 'Mes articles',
+      print: '/posts',
+    },
     linktree: 'Linktree',
   },
   projects: {
