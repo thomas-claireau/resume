@@ -13,18 +13,18 @@ export default function Header() {
   const { width } = useWindowSize();
 
   return (
-    <header className="flex items-center justify-between pb-8 border-b border-gray-100">
+    <header className="flex items-center justify-between pb-8 border-b border-gray-100 print:pb-2">
       <div className="left flex items-center gap-3 sm:gap-6">
         <Button color="bg-[#c3ace9] print:text-[#c3ace9]" shadow="shadow-[0_2px_0_0_#a439ff]" href="mailto:pro.thomas.claireau@gmail.com" target="blank">
           {width >= 640 ? (
             <>
               <span className="print:hidden">{i18n?.contact.web}</span>
-              <a href={i18n?.contact.print} className="hidden print:flex items-center gap-2">
+              <span className="hidden print:flex items-center gap-2">
                 <span className="mt-1">
                   💌
                 </span>
                 {i18n?.contact.print}
-              </a>
+              </span>
             </>
           ) : (
             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">

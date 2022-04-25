@@ -22,7 +22,7 @@ export default function Box({ data, ul = false }: Props) {
       <h3 className="text-xl font-semibold">
         {data.label}
       </h3>
-      <div className={`flex flex-col ${!ul ? 'gap-5' : ''} mt-5`}>
+      <div className={`flex flex-col ${!ul ? 'gap-5' : ''} mt-5 print:mt-0`}>
         {data.items.map(({
           title, description, organization, date,
         }, index) => (!ul ? (
@@ -35,7 +35,7 @@ export default function Box({ data, ul = false }: Props) {
               </div>
             )}
           </div>
-        ) : (<li key={index}>{title}</li>)))}
+        ) : (<li className="list-none" key={index}>{title}</li>)))}
       </div>
     </article>
   );
